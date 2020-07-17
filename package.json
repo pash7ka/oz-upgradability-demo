@@ -1,0 +1,16 @@
+{
+  "name": "oz-upgradability-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pash7ka/oz-upgradability-demo.git",
+  "author": "Pavel Rubin <pash7ka@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts-ethereum-package": "^2.5.0",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "@truffle/hdwallet-provider": "^1.0.38",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.34"
+  }
+}

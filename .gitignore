@@ -1,0 +1,21 @@
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+
+# OpenZeppelin SDK
+.openzeppelin/dev-*.json
+.openzeppelin/.session
+
+# Dependency directories
+node_modules/
+
+
+# project artifacts
+build/*
+
+# Environment
+.env
+
+
+
+.openzeppelin\.session
