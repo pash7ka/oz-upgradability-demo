@@ -1,0 +1,186 @@
+{
+  "contracts": {
+    "MultisigWallet": {
+      "address": "0x35A32b0cBd963EcDEf27B491a6168B582BC074f9",
+      "constructorCode": "6080604052610d2a806100136000396000f3fe",
+      "bodyBytecodeHash": "88daf7f188f4f80721bcb326eee7a3fd766709b3c430d7ccb0a516c8d92c0cf5",
+      "localBytecodeHash": "8eac30d7dd6066e36f28119f3734db2b9dacba65b28424cf0259ce10d8df1831",
+      "deployedBytecodeHash": "8eac30d7dd6066e36f28119f3734db2b9dacba65b28424cf0259ce10d8df1831",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 223,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:2"
+            }
+          ]
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_struct<MultisigWallet.TokenTransferProposal>": {
+          "id": "t_struct<MultisigWallet.TokenTransferProposal>",
+          "kind": "struct",
+          "label": "MultisigWallet.TokenTransferProposal",
+          "members": [
+            {
+              "label": "token",
+              "astId": 30,
+              "type": "t_address",
+              "src": "619:13:0"
+            },
+            {
+              "label": "to",
+              "astId": 32,
+              "type": "t_address",
+              "src": "643:10:0"
+            },
+            {
+              "label": "amount",
+              "astId": 34,
+              "type": "t_uint256",
+              "src": "664:14:0"
+            },
+            {
+              "label": "signed",
+              "astId": 38,
+              "type": "t_mapping<t_bool>",
+              "src": "689:29:0"
+            },
+            {
+              "label": "signatureCount",
+              "astId": 40,
+              "type": "t_uint256",
+              "src": "729:22:0"
+            },
+            {
+              "label": "executed",
+              "astId": 42,
+              "type": "t_bool",
+              "src": "762:13:0"
+            }
+          ]
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_array:dyn<t_struct<MultisigWallet.TokenTransferProposal>>": {
+          "id": "t_array:dyn<t_struct<MultisigWallet.TokenTransferProposal>>",
+          "valueType": "t_struct<MultisigWallet.TokenTransferProposal>",
+          "length": "dyn",
+          "kind": "array",
+          "label": "MultisigWallet.TokenTransferProposal[]"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "initialized",
+          "astId": 494,
+          "type": "t_bool",
+          "src": "757:24:5"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "initializing",
+          "astId": 496,
+          "type": "t_bool",
+          "src": "876:25:5"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "______gap",
+          "astId": 558,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:5"
+        },
+        {
+          "contract": "SignerRole",
+          "path": "@openzeppelin\\contracts-ethereum-package\\contracts\\access\\roles\\SignerRole.sol",
+          "label": "_signers",
+          "astId": 320,
+          "type": "t_struct<Roles.Role>",
+          "src": "327:27:3"
+        },
+        {
+          "contract": "SignerRole",
+          "path": "@openzeppelin\\contracts-ethereum-package\\contracts\\access\\roles\\SignerRole.sol",
+          "label": "______gap",
+          "astId": 420,
+          "type": "t_array:50<t_uint256>",
+          "src": "1193:29:3"
+        },
+        {
+          "contract": "MultisigWallet",
+          "path": "..\\..\\..\\..\\D\\projects\\ethereum\\iot-presentaions\\oz-upgradability-demo\\contracts\\MultisigWallet.sol",
+          "label": "requiredSignatures",
+          "astId": 45,
+          "type": "t_uint256",
+          "src": "791:26:0"
+        },
+        {
+          "contract": "MultisigWallet",
+          "path": "..\\..\\..\\..\\D\\projects\\ethereum\\iot-presentaions\\oz-upgradability-demo\\contracts\\MultisigWallet.sol",
+          "label": "proposals",
+          "astId": 48,
+          "type": "t_array:dyn<t_struct<MultisigWallet.TokenTransferProposal>>",
+          "src": "825:33:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "oz-upgradability-demo/MultisigWallet": [
+      {
+        "address": "0xc52E213FcDb361e4F1B432a8E9cee08a6fEF7CFC",
+        "version": "1.0.0",
+        "implementation": "0x35A32b0cBd963EcDEf27B491a6168B582BC074f9",
+        "admin": "0x82caA86FAf005fC579A89A3f17c783C0B63029de",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x82caA86FAf005fC579A89A3f17c783C0B63029de"
+  }
+}
